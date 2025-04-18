@@ -1,4 +1,112 @@
 ﻿@page "/"
+@inject ViewModel VM 
 
+<style>
+    body, html {
+        font-family: 'Segoe UI';
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column
+    }
 
+    .header {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        height: 7vh;
+        background-color: #F4E8D3;
+        column-gap: 30px;
+        padding: 0 20px
+    }
 
+        .header img {
+            height: 75%
+        }
+
+        .header p {
+            margin: 0;
+            font-size: 28px
+        }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-row-gap: 30px;
+        flex: 1;
+        overflow-y: auto
+    }
+
+        .main p {
+            font-weight: 600;
+            font-size: 20px;
+            margin: 10px 0 0 0
+        }
+
+    .client {
+        width: 70%;
+        grid-row-gap: 15px;
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 15px
+    }
+
+        .client p {
+            margin: 0;
+            font-size: 18px
+        }
+
+        .client div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            grid-row-gap: 15px
+        }
+
+    .footer {
+        margin: 20px 0 0 0;
+        width: 100%;
+        height: 4vh;
+        background-color: #F4E8D3
+    }
+</style>
+
+<div class="header">
+    <img src="images/пицца.png" />
+    <p>Пиццерия</p>
+</div>
+<div class="main">
+    <p>Список клиентов</p>
+    @foreach(var c in VM.clients)
+    {
+        foreach (var o in VM.orders)
+        {
+            if (c.ClientId == o.ClientId)
+            {
+               <div class="client">
+                   <p style="width: 60%">@c.ClientLastName @c.ClientFirstName @c.ClientMiddleName</p>
+                   <p style="width: 40%">@c.PhoneNumber</p>
+                   <p style="width: 100%; color: #67BA80">Последний заказ:</p>
+                   <div>
+                       <p style="width: 100%">Дата заказа: @o.OrderDate</p>
+                       <p style="width: 100%">Стоимость заказа: @VM.CalculateDiscount(o.OrderId) Р</p>
+                       <p style="width: 40%">Пицца: @VM.GetPizzaName(o.OrderId)</p>
+                   </div>
+               </div>
+            }
+        }
+    }
+</div>
+<div class="footer"></div>
+
+@code {
+
+    protected override async Task OnInitializedAsync()
+    {
+        await VM.InitializeAsync();
+    }
+
+}

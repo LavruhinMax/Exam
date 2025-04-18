@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0" version="26.2.13">
+  <diagram name="Страница — 1" id="3uquVw4cJtqDjtG4X0Wx">
+    <mxGraphModel dx="979" dy="548" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xhl5XgnI-P_S-y-PSKtd-1" value="Начало" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="340" y="60" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xhl5XgnI-P_S-y-PSKtd-2" value="Конец" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="343.75" y="740" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xhl5XgnI-P_S-y-PSKtd-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="xhl5XgnI-P_S-y-PSKtd-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="210" as="sourcePoint" />
+            <mxPoint x="400" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xhl5XgnI-P_S-y-PSKtd-4" value="price, quantity,&lt;div&gt;FinalPrice&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="340" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xhl5XgnI-P_S-y-PSKtd-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="399.66" y="210" as="sourcePoint" />
+            <mxPoint x="399.66" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xhl5XgnI-P_S-y-PSKtd-7" value="(price * quantity) &amp;gt; 4000" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="336.25" y="250" width="127.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xhl5XgnI-P_S-y-PSKtd-8" value="(price * quantity) &amp;gt; 2000" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="342.5" y="400" width="117.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xhl5XgnI-P_S-y-PSKtd-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="403.41" y="700" as="sourcePoint" />
+            <mxPoint x="403.41" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xhl5XgnI-P_S-y-PSKtd-10" value="FinalPrice" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="343.75" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xhl5XgnI-P_S-y-PSKtd-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.472;exitY=1.029;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.469;entryY=-0.005;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="xhl5XgnI-P_S-y-PSKtd-16" target="xhl5XgnI-P_S-y-PSKtd-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="403.41" y="600" as="sourcePoint" />
+            <mxPoint x="403.41" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xhl5XgnI-P_S-y-PSKtd-12" value="Да" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="xhl5XgnI-P_S-y-PSKtd-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="275" as="sourcePoint" />
+            <mxPoint x="560" y="295" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xhl5XgnI-P_S-y-PSKtd-13" value="Нет" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="xhl5XgnI-P_S-y-PSKtd-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400.91" y="360" as="sourcePoint" />
+            <mxPoint x="400.91" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xhl5XgnI-P_S-y-PSKtd-14" value="Да" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="444.65999999999997" as="sourcePoint" />
+            <mxPoint x="520" y="445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xhl5XgnI-P_S-y-PSKtd-15" value="Нет" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400.79" y="490" as="sourcePoint" />
+            <mxPoint x="401.70000000000005" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xhl5XgnI-P_S-y-PSKtd-16" value="FinalPrice = price * quantity" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350.75" y="550" width="106" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xhl5XgnI-P_S-y-PSKtd-17" value="FinalPrice = (price * quantity) * 0.95" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="420" width="106" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xhl5XgnI-P_S-y-PSKtd-18" value="FinalPrice = (price * quantity) * 0.93" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="270" width="106" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xhl5XgnI-P_S-y-PSKtd-19" value="" style="endArrow=none;html=1;rounded=0;exitX=0.888;exitY=1.019;exitDx=0;exitDy=0;exitPerimeter=0;startFill=0;" edge="1" parent="1" source="xhl5XgnI-P_S-y-PSKtd-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="390" as="sourcePoint" />
+            <mxPoint x="400" y="620" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="654" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xhl5XgnI-P_S-y-PSKtd-20" value="" style="endArrow=none;html=1;rounded=0;exitX=0.445;exitY=1.002;exitDx=0;exitDy=0;startFill=0;exitPerimeter=0;" edge="1" parent="1" source="xhl5XgnI-P_S-y-PSKtd-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="572.6600000000001" y="470" as="sourcePoint" />
+            <mxPoint x="570" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

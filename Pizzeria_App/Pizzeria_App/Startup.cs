@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Pizzeria_App.ViewModel;
 
 namespace Pizzeria_App
 {
@@ -25,6 +24,7 @@ namespace Pizzeria_App
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
+            services.AddScoped<Pizzeria_App.ViewModel.ViewModel>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
